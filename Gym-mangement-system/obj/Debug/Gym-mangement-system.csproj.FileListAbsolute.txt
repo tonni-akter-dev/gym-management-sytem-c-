@@ -21,4 +21,5 @@ C:\Users\user\Desktop\Project-uni\Gym-mangement-system\bin\Debug\GymManagementDb
 C:\Users\user\Desktop\Project-uni\Gym-mangement-system\bin\Debug\GymManagementDb_log.ldf
 C:\Users\user\Desktop\Project-uni\Gym-mangement-system\obj\Debug\Gym_mangement_system.Payment.resources
 C:\Users\user\Desktop\Project-uni\Gym-mangement-system\obj\Debug\Gym_mangement_system.View_Item.resources
-C:\Users\user\Desktop\Project-uni\Gym-mangement-system\bin\Debug\Guna.UI.dll
+C:\Users\user\Desktop\Project-uni\Gym-mangement-system\obj\Debug\Gym_mangement_system.Equipment.resources
+C:\Users\user\Desktop\Project-uni\Gym-mangement-system\obj\Debug\Gym_mangement_system.viewEquipment.resources

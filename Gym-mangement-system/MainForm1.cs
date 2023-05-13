@@ -66,5 +66,12 @@ namespace Gym_mangement_system
             pay.Show();
             this.Hide();
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Equipment equipment = new Equipment();
+            equipment.Show();
+            this.Hide();
+        }
     }
 }

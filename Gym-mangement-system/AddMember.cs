@@ -20,14 +20,6 @@ namespace Gym_mangement_system
 
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Desktop\Project-uni\Gym-mangement-system\GymDb.mdf;Integrated Security=True;Connect Timeout=30");
 
-
-
-
-
-
-
-
-
         private void AddMember_Load(object sender, EventArgs e)
         {
 

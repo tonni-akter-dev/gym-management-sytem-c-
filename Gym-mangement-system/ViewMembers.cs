@@ -87,5 +87,10 @@ namespace Gym_mangement_system
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Collections;
+
 namespace Gym_mangement_system
 {
     public partial class Payment : Form
@@ -98,9 +100,10 @@ namespace Gym_mangement_system
             }
             else
             {
-                string payperiod= Periode.Value.Month.ToString()+ Periode.Value.Year.ToString();
+                string payperiod= periode.Value.Month.ToString()+ periode.Value.Year.ToString();
                 Con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select count(*) from PaymentTbl where PMember='"+NameCb.SelectedValue.ToString()+"'and PMonth='"+payperiod+"'",Con);
+                SqlDataAdapter sda = new SqlDataAdapter("select count(*) from PaymentTbl where PMember='" + NameCb.SelectedValue.ToString() + "'and PMonth=payperiod='", Con);
+                //string query = "insert into MemberTbl values('" + NameTb.Text + "','" + PhoneTb.Text + "','" + GenderCb.SelectedItem.ToString() + "'," + AgeTb.Text + " ," + AmountTb.Text + ",'" + TimingCb.SelectedItem.ToString() + "')";
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 if (dt.Rows[0][0].ToString() == "1")
@@ -109,7 +112,8 @@ namespace Gym_mangement_system
                 }
                 else
                 {
-                    string query = "insert into PaymentTbl values('"+payperiod+ "','"+NameCb.SelectedValue.ToString()+"',"+AmountTb.Text+")";
+                    string query = "insert into PaymentTbl values('" + payperiod + "','" + NameCb.SelectedValue.ToString() + "','" + AmountTb.Text + ",'" + "')";
+                        //"('"+ payperiod+"'," + NameCb.SelectedValue.ToString()+"',"+AmountTb.Text+")";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Amount paid successfully");
