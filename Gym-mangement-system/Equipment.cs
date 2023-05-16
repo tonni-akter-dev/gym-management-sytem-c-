@@ -68,9 +68,9 @@ namespace Gym_mangement_system
                 if (dr.Read())
                 {
                     MessageBox.Show("" + EquipNameTb.Text + "'s Equipment Details is Inserted Successfully.. ");
-                    this.Hide();
+                   // this.Hide();
                 }
-                this.Close();
+               // this.Close();
             }
             catch (SqlException excep)
             {
